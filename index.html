@@ -20,13 +20,11 @@
       <div id="sign-up-container">
           <form id="sign-up-form" title="sign-up-form" action="" method="post">
             <h1 id="create-acount-heading">Create Account</h1>
-            <div id="name">
-              <fieldset>
+            <div class="input-container">
                 <input type="text" id="input-first-name" placeholder="First Name">
                 <input type="text" id="input-last-name" placeholder="Last Name">
-              </fieldset>
             </div>
-            <div id="account-email">
+            <div class="input-container">
               <select name="account-type" id="account-type">
                 <option value="">Account Type</option>
                 <option value="student">Student</option>
@@ -34,13 +32,11 @@
               </select>
               <input type="email" id="input-email-name" placeholder="Email">
             </div>
-            <div id="password">
-              <fieldset>
+            <div class="input-container">
                 <input type="password" id="input-password-name" placeholder="Password">
                 <input type="password" id="input-password-name" placeholder="Confirm Password">
-              </fieldset>
             </div>
-            <button>Submit</button>
+            <button id="button-submit">Submit</button>
             <div>
               Already have an account?
               <a href="./pages/login-page.html">Login</a>
