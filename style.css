@@ -44,6 +44,7 @@ fieldset {
 
 #quote {
   color: white;
+  font-size: 1.5rem;
 }
 
 #background-img-container {
@@ -133,13 +134,18 @@ fieldset {
 }
 
 #account-type {
-
+  margin-bottom: 0.5rem;
 }
 
-/* select option:checked, select option:hover {
-  background-color: var(--primary-color);
-  color: white;
-} */
+select {
+  transition: 
+  border-color 0.3s ease;
+}
+
+select:focus {
+  outline: none !important;
+  border: 2px solid var(--primary-color);
+}
 
 h1 {
   margin-bottom: 3rem;
