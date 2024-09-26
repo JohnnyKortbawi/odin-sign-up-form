@@ -14,27 +14,52 @@
   <div id="main-container">
     <div id="background-img-container">
       <div id="title">TUTOREVIEW</div>
-      <div>Your one stop to reach all your learning destinations</div> 
+      <div id="quote">Your one stop to reach all your learning destinations</div> 
     </div>
     <div id="card-container">
       <div id="sign-up-container">
           <form id="sign-up-form" title="sign-up-form" action="" method="post">
             <h1 id="create-acount-heading">Create Account</h1>
+            <select name="account-type" id="account-type">
+              <option value="">Account Type</option>
+              <option value="student">Student</option>
+              <option value="tutor">Tutor</option>
+            </select>
             <div class="input-container">
-                <input type="text" id="input-first-name" placeholder="First Name">
-                <input type="text" id="input-last-name" placeholder="Last Name">
+              <label class="custom-text-input">
+                <input id="input-first-name" type="text" required>
+                  <span class="placeholder">First Name</span>
+                </input>
+              </label> 
+              <label class="custom-text-input">
+                <input id="input-last-name" type="text" required>
+                  <span class="placeholder">Last Name</span>
+                </input>
+              </label> 
             </div>
             <div class="input-container">
-              <select name="account-type" id="account-type">
-                <option value="">Account Type</option>
-                <option value="student">Student</option>
-                <option value="tutor">Tutor</option>
-              </select>
-              <input type="email" id="input-email-name" placeholder="Email">
+              <label class="custom-text-input">
+                <input id="input-email" type="text" required>
+                  <span class="placeholder">Email</span>
+                </input>
+              </label> 
+              <label class="custom-text-input">
+                <input id="input-phone" type="text" required>
+                  <span class="placeholder">Phone</span>
+                </input>
+              </label> 
             </div>
             <div class="input-container">
-                <input type="password" id="input-password-name" placeholder="Password">
-                <input type="password" id="input-password-name" placeholder="Confirm Password">
+              <label class="custom-text-input">
+                <input id="input-password" type="text" required>
+                  <span class="placeholder">Password</span>
+                </input>
+              </label> 
+              <label class="custom-text-input">
+                <input id="input-confirm-password" type="text" required>
+                  <span class="placeholder">Confirm Password</span>
+                </input>
+              </label> 
             </div>
             <button id="button-submit">Submit</button>
             <div>

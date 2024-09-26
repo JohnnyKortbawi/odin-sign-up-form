@@ -1,9 +1,7 @@
-
 :root {
   --primary-color: rgb(0, 122, 2); 
   --secondary-color: rgb(0, 122, 2);
 }
-
 
 * {
   margin: 0px;
@@ -16,6 +14,19 @@ input, select {
   width: 20rem;
   padding: 0.5rem;
   font-size: 1rem;
+
+  border: 2px solid grey;
+  border-radius: 0.5rem;
+}
+
+input {
+  appearance: none;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 fieldset {
@@ -31,6 +42,10 @@ fieldset {
   font-size: 72px;
 }
 
+#quote {
+  color: white;
+}
+
 #background-img-container {
   background-image: url('./images/green-abstract-background.jpg');
   background-size: cover;
@@ -40,7 +55,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 12rem;
+  padding-top: 8rem;
 }
 
 #card-container {
@@ -49,7 +64,7 @@ fieldset {
   align-items: center;
   width: 55%;
   height: 100vh;
-  padding-top: 12rem;
+  padding-top: 8rem;
 }
 
 #sign-up-container {
@@ -65,12 +80,69 @@ fieldset {
 #sign-up-form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .input-container {
   display: flex;
   gap: 3rem;
+}
+
+.custom-text-input {
+  width: 20rem;
+  position: relative;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: grey;
+}
+
+.custom-text-input .placeholder {
+  position: absolute;
+  left: 0.6rem;
+  top: 50%;
+  transition: 
+    top 0.3s ease,
+    font-size 0.3s ease,
+    color 0.3s ease;
+}
+
+.custom-text-input input:valid + .placeholder,
+.custom-text-input input:focus + .placeholder,
+.custom-text-input input:is(:autofill) + .placeholder {
+  top: 20%;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.custom-text-input input + .placeholder {
+  border-radius: 40%;
+  background-color: white;
+  padding: 0 4px;
+}
+
+.custom-text-input input {
+  transition: 
+    border-color 0.3s ease;
+}
+
+.custom-text-input input:focus
+{
+  outline: none !important;
+  border: 2px solid var(--primary-color);
+}
+
+#account-type {
+
+}
+
+select option:checked, select option:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+h1 {
+  margin-bottom: 3rem;
 }
 
 #button-submit {
@@ -80,4 +152,8 @@ fieldset {
   border: none;
   padding: 0.5em;
   font-size: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  cursor: pointer;
 }
+
